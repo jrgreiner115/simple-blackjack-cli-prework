@@ -33,9 +33,9 @@ def initial_round
   # code #initial_round here
 end
 
-def hit?(number)
+def hit?(card_total)
   prompt_user
-  answer = get_user_input
+  input = get_user_input
     if answer == "h"
       $sum += deal_card
       display_card_total($sum)
