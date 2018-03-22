@@ -37,7 +37,7 @@ def hit?(current_total)
   prompt_user
   get_user_input
   if get_user_input == h
-    return current_total += 
+    return current_total += deal_card
 else deal_card
   # code hit? here
 end
