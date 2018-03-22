@@ -35,13 +35,13 @@ end
 
 def hit?(number)
   prompt_user
-  input = get_user_input
-  if input == "s"
-    display_card_total(card_total)
-else number += deal_card
-  display_card_total(card_total)
-  # code hit? here
-end
+  answer = get_user_input
+    if answer == "h"
+      $sum += deal_card
+      display_card_total($sum)
+    else
+      display_card_total($sum)
+    end
 end
 
 def invalid_command
