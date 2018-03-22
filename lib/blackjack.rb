@@ -33,7 +33,11 @@ def initial_round
   # code #initial_round here
 end
 
-def hit?
+def hit?(current_total)
+  prompt_user
+  get_user_input
+  if get_user_input == s
+else deal_card
   # code hit? here
 end
 
