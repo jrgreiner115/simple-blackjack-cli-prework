@@ -33,16 +33,15 @@ def initial_round
   # code #initial_round here
 end
 
-def hit?(card_total)
+def hit?(number)
   prompt_user
- input = get_user_input
- if input == 'h' then
-   card_total += deal_card
-   elsif input == 's' then
-    card_total
-   else
-     invalid_command
-  end
+  answer = get_user_input
+    if answer == "h"
+      $sum += deal_card
+      display_card_total($sum)
+    else
+      display_card_total($sum)
+    end
 end
 
 def invalid_command
