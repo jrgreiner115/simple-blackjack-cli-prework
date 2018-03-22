@@ -40,7 +40,7 @@ def hit?(card_total)
       card_total += deal_card
       display_card_total(card_total)
     else
-      display_card_total($sum)
+      display_card_total(card_total)
     end
 end
 
