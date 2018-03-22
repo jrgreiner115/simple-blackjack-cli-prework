@@ -33,7 +33,7 @@ def initial_round
   # code #initial_round here
 end
 
-def hit?(current_total)
+def hit?(number)
   prompt_user
   input = get_user_input
   if get_user_input == h
