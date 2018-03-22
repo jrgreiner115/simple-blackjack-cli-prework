@@ -35,8 +35,8 @@ end
 
 def hit?(number)
   prompt_user
-  get_user_input
-  if input == s
+  input = get_user_input
+  if input == "s"
     puts number
 else number += deal_card
   # code hit? here
